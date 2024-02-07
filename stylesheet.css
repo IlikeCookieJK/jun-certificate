@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+
+}
+
+.selection {
+    background-color: blue;
+    display: flex;
+    width: 30%;
+}
+
+.certificate {
+    background-color: red;
+    display: flex;
+    width: 70%;
+}
