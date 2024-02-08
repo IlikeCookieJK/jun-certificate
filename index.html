@@ -5,15 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="certificate.js"></script>
 </head>
 <body>
     <main>
         <section class="selection">
-            <form action=""></form>
+            <form action="" id="cform">
+                <p>Input Name</p>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <p>Input Reason for Certificate</p>
+                <textarea name="reason" id="reason" placeholder="Reason" cols="90" rows="10"></textarea>
+
+                <select name="type" id="type">
+                    <option value="court">Federal Court Certificate</option>
+                    <option value="challenger">Challenger Certificate</option>
+                    <option value="noscam">Totally Legit Certificate</option>
+                </select>
+                
+                <input type="submit" value="Generate" class="submit">
+            </form>
         </section>
 
         <section class="certificate">
-            <h1>hi</h1>
+            <div id="certificate">
+                <div class="certificate2"></div>
+                <span id="nameOuput" class="">Name</span>
+            </div>
+
         </section>
     </main>
 </body>
