@@ -46,9 +46,17 @@ textarea {
     align-items: center;
 }
 
+.crea {
+    height: 5vh;
+}
+
+.cname {
+    height: 5vh;
+}
+
 .certificate1 {
-    width: 105vh;
-    height: 82vh;
+    width: 528*2px;
+    height: 408*2px;
     background-image: url(certificates/Court.png);
     background-size: cover;
 }
@@ -56,28 +64,29 @@ textarea {
 .certificate1 .cname{
     display: flex;
     justify-content: center;
-    margin: 39vh 32vh;
+    align-items: center;
+    margin: 39vh 19.2vw;
     text-align: center;
     width: 20rem;
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 .certificate1 .crea{
     display: flex;
     justify-content: center;
-    margin: -28vh 20vh;
+    margin: -28vh 14.5vw;
     text-align: center;
     width: 32rem;
-    font-size: 1.5rem;
+    font-size: 1.2vw;
 }
 
 .certificate1 .cdate{
     display: flex;
     justify-content: center;
-    margin: 42vh 44.5vh;
+    margin: 41vh 24vw;
     text-align: center;
-    width: 8rem;
-    font-size: 1.5rem;
+    width: 9rem;
+    font-size: 1.6vw;
 }
 
 .certificate2 {
@@ -90,28 +99,28 @@ textarea {
 .certificate2 .cname{
     display: flex;
     justify-content: center;
-    margin: 29vh 32vh;
+    margin: 30vh 19.7vw;
     text-align: center;
     width: 20rem;
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 .certificate2 .crea{
     display: flex;
     justify-content: center;
-    margin: -27vh 20vh;
+    margin: -30vh 15vw;
     text-align: center;
     width: 32rem;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 .certificate2 .cdate{
     display: flex;
     justify-content: center;
-    margin: 39vh 44.5vh;
+    margin: 44vh 24.5vw;
     text-align: center;
     width: 8rem;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 }
 
 .certificate3 {
@@ -124,26 +133,38 @@ textarea {
 .certificate3 .cname{
     display: flex;
     justify-content: center;
-    margin: 36vh 32vh;
+    margin: 36vh 18vw;
     text-align: center;
     width: 20rem;
-    font-size: 2rem;
+    font-size: 2.5vw;
 }
 
 .certificate3 .crea{
     display: flex;
     justify-content: center;
-    margin: -36vh 20vh;
+    margin: -36vh 13.5vw;
     text-align: center;
     width: 32rem;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
 }
 
 .certificate3 .cdate{
     display: flex;
     justify-content: center;
-    margin: 55vh 44.5vh;
+    margin: 53vh 24.5vw;
     text-align: center;
     width: 8rem;
-    font-size: 1.5rem;
+    font-size: 1.8vw;
+}
+
+@media print {
+    .selection {
+        display: none;
+    }
+    .cimg {
+        display: contents;
+    }
+    /* #certificate {
+        display: contents;
+    } */
 }
