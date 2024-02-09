@@ -64,9 +64,19 @@ document.addEventListener("DOMContentLoaded", function () {
         buttons.forEach(button => button.addEventListener('click', processForm))
     }
 
+    document.getElementById('type').addEventListener('change', function (eventData) {
+        // console.log(eventData);
+        changeCert(eventData.target.value);
+    });
+
     document.getElementById('name').addEventListener('change', function (eventData) {
         let nameOutput = document.getElementById('nameOutput');
         nameOutput.innerText = eventData.target.value;
+    });
+
+    document.getElementById('reason').addEventListener('change', function (eventData) {
+        let rOutput = document.getElementById('rOutput');
+        rOutput.innerText = eventData.target.value;
     });
 
     document.getElementById("cform").addEventListener("submit", function (eventData) {
@@ -80,19 +90,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-    // function changeCert(value) {
-    //     let certificate = document.getElementById('certificate');
-    //     certificate.classList = ""; // clear classes on each function call
-    //     switch (value) {
-    //         case 'court':
-    //             certificate.classList.add('certificate1');
-    //             break;
-    //         case 'challenger':
-    //             certificate.classList.add('certificate2');
-    //             break;
-    //         case 'noscam':
-    //             certificate.classList.add('certificate3');
-    //             break;
-    //     }
-    // }
+    function changeCert(value) {
+        let certificate = document.getElementById('certificate');
+        certificate.classList = ""; // clear classes on each function call
+        switch (value) {
+            case 'court':
+                certificate.classList.add('certificate1');
+                break;
+            case 'challenger':
+                certificate.classList.add('certificate2');
+                break;
+            case 'noscam':
+                certificate.classList.add('certificate3');
+                break;
+        }
+    }
 });

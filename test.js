@@ -16,10 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
         nameOutput.innerText = eventData.target.value;
     });
 
-    // document.getElementById('type').addEventListener('change', function (eventData) {
-    //     // console.log(eventData);
-    //     changeCert(eventData.target.value);
-    // });
+    document.getElementById('type').addEventListener('change', function (eventData) {
+        // console.log(eventData);
+        changeCert(eventData.target.value);
+    });
 
     // process form Data
     document.getElementById("myForm").addEventListener("submit", function (eventData) {

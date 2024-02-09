@@ -90,10 +90,28 @@ textarea {
 .certificate2 .cname{
     display: flex;
     justify-content: center;
-    margin: 29vh 31vh;
+    margin: 29vh 32vh;
     text-align: center;
     width: 20rem;
     font-size: 2rem;
+}
+
+.certificate2 .crea{
+    display: flex;
+    justify-content: center;
+    margin: -27vh 20vh;
+    text-align: center;
+    width: 32rem;
+    font-size: 1.5rem;
+}
+
+.certificate2 .cdate{
+    display: flex;
+    justify-content: center;
+    margin: 39vh 44.5vh;
+    text-align: center;
+    width: 8rem;
+    font-size: 1.5rem;
 }
 
 .certificate3 {
@@ -101,4 +119,31 @@ textarea {
     height: 82vh;
     background-image: url(certificates/legit.png);
     background-size: cover;
+}
+
+.certificate3 .cname{
+    display: flex;
+    justify-content: center;
+    margin: 36vh 32vh;
+    text-align: center;
+    width: 20rem;
+    font-size: 2rem;
+}
+
+.certificate3 .crea{
+    display: flex;
+    justify-content: center;
+    margin: -36vh 20vh;
+    text-align: center;
+    width: 32rem;
+    font-size: 1.2rem;
+}
+
+.certificate3 .cdate{
+    display: flex;
+    justify-content: center;
+    margin: 55vh 44.5vh;
+    text-align: center;
+    width: 8rem;
+    font-size: 1.5rem;
 }
