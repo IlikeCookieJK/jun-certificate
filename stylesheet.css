@@ -30,7 +30,7 @@ form {
 
 textarea {
     resize: none;
-    width: 30rem;
+    width: 30vw;
 }
 
 .submit {
@@ -39,7 +39,7 @@ textarea {
     border-radius: 5px;
 }
 
-.certificate {
+.cimg {
     display: flex;
     flex-basis: 70%;
     justify-content: center;
@@ -47,22 +47,58 @@ textarea {
 }
 
 .certificate1 {
-    width: 100vh;
-    height: 80vh;
+    width: 105vh;
+    height: 82vh;
     background-image: url(certificates/Court.png);
     background-size: cover;
 }
 
+.certificate1 .cname{
+    display: flex;
+    justify-content: center;
+    margin: 39vh 31vh;
+    text-align: center;
+    width: 20rem;
+    font-size: 2rem;
+}
+
+.certificate1 .crea{
+    display: flex;
+    justify-content: center;
+    margin: -28vh 20vh;
+    text-align: center;
+    width: 32rem;
+    font-size: 1.5rem;
+}
+
+.certificate1 .cdate{
+    display: flex;
+    justify-content: center;
+    margin: 42vh 44.5vh;
+    text-align: center;
+    width: 8rem;
+    font-size: 1.5rem;
+}
+
 .certificate2 {
-    width: 100vh;
-    height: 80vh;
+    width: 105vh;
+    height: 82vh;
     background-image: url(certificates/Challenger.png);
     background-size: cover;
 }
 
+.certificate2 .cname{
+    display: flex;
+    justify-content: center;
+    margin: 29vh 31vh;
+    text-align: center;
+    width: 20rem;
+    font-size: 2rem;
+}
+
 .certificate3 {
-    width: 100vh;
-    height: 80vh;
+    width: 105vh;
+    height: 82vh;
     background-image: url(certificates/legit.png);
     background-size: cover;
 }

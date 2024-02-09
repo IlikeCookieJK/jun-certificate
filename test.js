@@ -1,3 +1,5 @@
+
+// Add Event listners when DOM is ready
 document.addEventListener("DOMContentLoaded", function () {
 
     // check for buttons exist
@@ -15,12 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.getElementById('type').addEventListener('change', function (eventData) {
+        let nameOutput = document.getElementById('nameOutput');
+        // console.log(eventData);
+        let info = document.getElementById('info');
+        info.innerText = eventData.target.value;
         changeCert(eventData.target.value);
-        console.log(changeCert(eventData.target.value))
     });
 
     // process form Data
-    document.getElementById("cForm").addEventListener("submit", function (eventData) {
+    document.getElementById("myForm").addEventListener("submit", function (eventData) {
         eventData.preventDefault(); //stop page reload when form is submitted
         console.log(eventData.target);
         var formData = new FormData(eventData.target);
@@ -39,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // let info = document.getElementById('info');
     // info.classList.add('test');
     
-    //changeCert has a problem for me
+    
     
     // certificate.classList.add('number1');
     
@@ -47,15 +52,29 @@ document.addEventListener("DOMContentLoaded", function () {
         let certificate = document.getElementById('certificate');
         certificate.classList = ""; // clear classes on each function call
         switch(value){
-            case 'court':
-                certificate.classList.add('certificate1');
+            case 'A':
+                certificate.classList.add('number1');
             break;
-            case 'challenger':
-                certificate.classList.add('certificate2');
+            case 'B':
+                certificate.classList.add('number2');
             break;
-            case 'noscam':
-                certificate.classList.add('certificate3');
+            case 'C':
+                certificate.classList.add('number3');
+            break;
+            case 'D':
+                certificate.classList.add('number4');
             break;
         }
     }
 });
+
+/* Additional things to be aware of */
+
+
+
+
+
+
+function processForm(form){
+
+}
