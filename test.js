@@ -16,13 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
         nameOutput.innerText = eventData.target.value;
     });
 
-    document.getElementById('type').addEventListener('change', function (eventData) {
-        let nameOutput = document.getElementById('nameOutput');
-        // console.log(eventData);
-        let info = document.getElementById('info');
-        info.innerText = eventData.target.value;
-        changeCert(eventData.target.value);
-    });
+    // document.getElementById('type').addEventListener('change', function (eventData) {
+    //     // console.log(eventData);
+    //     changeCert(eventData.target.value);
+    // });
 
     // process form Data
     document.getElementById("myForm").addEventListener("submit", function (eventData) {
@@ -33,13 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //update certificate information when form is submitted:
         let nameOutput = document.getElementById('nameOutput');
-        let info = document.getElementById('info');
         nameOutput.innerText = formData.name;
-        info.innerText = formData.type;
 
       });
     // Log readiness to console
-    console.log("Ready");
 
     // let info = document.getElementById('info');
     // info.classList.add('test');
