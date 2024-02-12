@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // if (document.querySelectorAll('.button') !== null) {
-    //     let buttons = document.querySelectorAll('.button');
-    //     buttons.forEach(button => button.addEventListener('click', processForm))
-    // }
+    if (document.querySelectorAll('.button') !== null) {
+        let buttons = document.querySelectorAll('.button');
+        buttons.forEach(button => button.addEventListener('click', processForm))
+    }
 
     document.getElementById('type').addEventListener('change', function (eventData) {
         // console.log(eventData);
@@ -34,16 +34,16 @@ document.addEventListener("DOMContentLoaded", function () {
         rOutput.innerText = uwu(eventData.target.value);
     });
 
-    // document.getElementById("cform").addEventListener("submit", function (eventData) {
-    //     eventData.preventDefault(); //stop page reload when form is submitted
-    //     var formData = new FormData(eventData.target);
-    //     formData = Object.fromEntries(formData);
+    document.getElementById("cform").addEventListener("submit", function (eventData) {
+        eventData.preventDefault(); //stop page reload when form is submitted
+        var formData = new FormData(eventData.target);
+        formData = Object.fromEntries(formData);
 
-    //     //update certificate information when form is submitted:
-    //     let nameOutput = document.getElementById('nameOutput');
-    //     nameOutput.innerText = formData.name;
+        //update certificate information when form is submitted:
+        let nameOutput = document.getElementById('nameOutput');
+        nameOutput.innerText = formData.name;
 
-    // });
+    });
 
     function changeCert(value) {
         let certificate = document.getElementById('certificate');
