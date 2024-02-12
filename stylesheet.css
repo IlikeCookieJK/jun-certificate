@@ -15,16 +15,34 @@ form {
 .selection {
     background-color: rgb(174, 174, 174);
     display: flex;
+    flex-flow: column wrap;
     flex-basis: 30%;
+    height: 100%;
 }
 
-.selection p{
+.selection p,
+a {
     font-size: 1.5rem;
     margin: .5rem 0;
     display: flex;
 }
 
-.selection input, select, textarea {
+#print {
+    margin: 0 1vw 0 0;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(61, 188, 71);
+    border-radius: 10px;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.selection input,
+select,
+textarea {
     margin: .5rem 0;
 }
 
@@ -33,138 +51,239 @@ textarea {
     width: 30vw;
 }
 
-.submit {
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 5px;
-}
-
 .cimg {
+    flex-basis: 100%;
     display: flex;
-    flex-basis: 70%;
     justify-content: center;
+    /* margin: 5vw 0; */
     align-items: center;
 }
 
-.crea {
-    height: 5vh;
+#certificate {
+    height: 80vh;
+    overflow: hidden;
+    border: red solid .3vw;
+
 }
 
-.cname {
-    height: 5vh;
-}
-
-.certificate1 {
-    width: 528*2px;
-    height: 408*2px;
-    background-image: url(certificates/Court.png);
-    background-size: cover;
-}
-
-.certificate1 .cname{
+.cimg img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 39vh 19.2vw;
+    align-self: center;
+    width: 50vw;
+    height: 80vh;
+}
+
+.cname,
+.crea,
+.cdate {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    width: 20rem;
+    width: 18vw;
+    height: 4vh;
+    /* border: red solid 2px; */
+
+}
+
+.certificate1 .cname {
     font-size: 2vw;
-}
-
-.certificate1 .crea{
+    flex-basis: 100%;
+    transform: translate(16.2vw, -41.5vh);
     display: flex;
     justify-content: center;
-    margin: -28vh 14.5vw;
-    text-align: center;
-    width: 32rem;
+    align-items: center;
+
+}
+
+.certificate1 .crea {
     font-size: 1.2vw;
+    width: 30vw;
+    height: 10vh;
+    position: relative;
+    transform: translate(9.8vw, -31vh);
 }
 
-.certificate1 .cdate{
-    display: flex;
-    justify-content: center;
-    margin: 41vh 24vw;
-    text-align: center;
-    width: 9rem;
-    font-size: 1.6vw;
+.certificate1 .cdate {
+    font-size: 1.4vw;
+    width: 10vw;
+    position: relative;
+    transform: translate(20vw, -23vh);
 }
 
-.certificate2 {
-    width: 105vh;
-    height: 82vh;
-    background-image: url(certificates/Challenger.png);
-    background-size: cover;
-}
-
-.certificate2 .cname{
-    display: flex;
-    justify-content: center;
-    margin: 30vh 19.7vw;
-    text-align: center;
-    width: 20rem;
+.certificate2 .cname {
     font-size: 2vw;
-}
-
-.certificate2 .crea{
+    flex-basis: 100%;
+    transform: translate(16.2vw, -51vh);
     display: flex;
     justify-content: center;
-    margin: -30vh 15vw;
-    text-align: center;
-    width: 32rem;
+    align-items: center;
+
+}
+
+.certificate2 .crea {
     font-size: 1.5vw;
+    width: 30vw;
+    height: 10vh;
+    position: relative;
+    transform: translate(10vw, -49.5vh);
 }
 
-.certificate2 .cdate{
+.certificate2 .cdate {
+    font-size: 1.4vw;
+    width: 10vw;
+    position: relative;
+    transform: translate(20vw, -40vh);
+}
+
+.certificate3 .cname {
+    font-size: 2vw;
+    flex-basis: 100%;
+    transform: translate(15.5vw, -44.2vh);
     display: flex;
     justify-content: center;
-    margin: 44vh 24.5vw;
-    text-align: center;
-    width: 8rem;
-    font-size: 1.5vw;
+    align-items: center;
+
 }
 
-.certificate3 {
-    width: 105vh;
-    height: 82vh;
-    background-image: url(certificates/legit.png);
-    background-size: cover;
-}
-
-.certificate3 .cname{
-    display: flex;
-    justify-content: center;
-    margin: 36vh 18vw;
-    text-align: center;
-    width: 20rem;
-    font-size: 2.5vw;
-}
-
-.certificate3 .crea{
-    display: flex;
-    justify-content: center;
-    margin: -36vh 13.5vw;
-    text-align: center;
-    width: 32rem;
-    font-size: 1.2vw;
-}
-
-.certificate3 .cdate{
-    display: flex;
-    justify-content: center;
-    margin: 53vh 24.5vw;
-    text-align: center;
-    width: 8rem;
+.certificate3 .crea {
     font-size: 1.8vw;
+    width: 35vw;
+    height: 10vh;
+    position: relative;
+    transform: translate(7.4vw, -44vh);
+}
+
+.certificate3 .cdate {
+    font-size: 1.6vw;
+    width: 10vw;
+    position: relative;
+    transform: translate(20vw, -32vh);
+}
+
+.certificate4 .cname {
+    font-size: 2vw;
+    flex-basis: 100%;
+    transform: translate(15.5vw, -44.2vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.certificate4 .crea {
+    font-size: 1.8vw;
+    width: 35vw;
+    height: 10vh;
+    position: relative;
+    transform: translate(7.4vw, -44vh);
+}
+
+.certificate4 .cdate {
+    font-size: 1.6vw;
+    width: 10vw;
+    position: relative;
+    transform: translate(20vw, -32vh);
+}
+
+.invs {
+    display: none !important;
+
+}
+
+.vis {
+    display: contents !important;
 }
 
 @media print {
     .selection {
         display: none;
     }
+
+    html,
+    body {
+        overflow: hidden;
+    }
+
     .cimg {
         display: contents;
+
     }
-    /* #certificate {
-        display: contents;
-    } */
+
+    #certificate {
+        overflow: visible;
+        border: none;
+    }
+
+    .cimg img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        /* border: blue solid 1px; */
+    }
+
+    .certificate1 .cname {
+        font-size: 4vw;
+        transform: translate(41vw, -51.5vh);
+    }
+
+    .certificate1 .crea {
+        font-size: 2.5vw;
+        width: 40rem;
+        transform: translate(20vw, -38vh);
+    }
+
+    .certificate1 .cdate {
+        font-size: 2.5vw;
+        transform: translate(45.5vw, -25vh);
+    }
+
+    .certificate2 .cname {
+        font-size: 4vw;
+        transform: translate(41vw, -63.5vh);
+    }
+
+    .certificate2 .crea {
+        font-size: 3.5vw;
+        width: 50rem;
+        transform: translate(12vw, -62vh);
+    }
+
+    .certificate2 .cdate {
+        font-size: 3vw;
+        transform: translate(45.5vw, -45vh);
+    }
+
+    .certificate3 .cname {
+        font-size: 4.5vw;
+        transform: translate(40vw, -54.5vh);
+    }
+
+    .certificate3 .crea {
+        font-size: 3.2vw;
+        width: 50rem;
+        transform: translate(12vw, -53vh);
+    }
+
+    .certificate3 .cdate {
+        font-size: 3vw;
+        transform: translate(45.5vw, -36vh);
+    }
+
+    .certificate4 .cname {
+        font-size: 4.5vw;
+        transform: translate(40vw, -54.5vh);
+    }
+
+    .certificate4 .crea {
+        font-size: 3.2vw;
+        width: 50rem;
+        transform: translate(12vw, -53vh);
+    }
+
+    .certificate4 .cdate {
+        font-size: 3vw;
+        transform: translate(45.5vw, -36vh);
+    }
 }

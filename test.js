@@ -1,74 +1,46 @@
+// function uwu(x) {
+//     let uwu = x;
+//     for (let i = 0; i <= uwu.length; i++) {
+//         let uwu = str.split(``).splice(i, char.length);
+//         if (x.toString() === char) {
+//             cat += 1;
+//         }
+//     }
+//     return cat
+// }
 
-// Add Event listners when DOM is ready
-document.addEventListener("DOMContentLoaded", function () {
 
-    // check for buttons exist
-    if ( document.querySelectorAll('.button') !== null) {
-        let buttons = document.querySelectorAll('.button');
-        buttons.forEach(button => button.addEventListener('click', processForm))
-    }
 
-    // optionally update when fields update
-    // tbd
-    document.getElementById('name').addEventListener('change', function (eventData) {
-        let nameOutput = document.getElementById('nameOutput');
-        // console.log(eventData);
-        nameOutput.innerText = eventData.target.value;
-    });
+// console.log(uwu(`rawr`))
 
-    document.getElementById('type').addEventListener('change', function (eventData) {
-        // console.log(eventData);
-        changeCert(eventData.target.value);
-    });
-
-    // process form Data
-    document.getElementById("myForm").addEventListener("submit", function (eventData) {
-        eventData.preventDefault(); //stop page reload when form is submitted
-        console.log(eventData.target);
-        var formData = new FormData(eventData.target);
-        formData = Object.fromEntries(formData);
-
-        //update certificate information when form is submitted:
-        let nameOutput = document.getElementById('nameOutput');
-        nameOutput.innerText = formData.name;
-
-      });
-    // Log readiness to console
-
-    // let info = document.getElementById('info');
-    // info.classList.add('test');
-    
-    
-    
-    // certificate.classList.add('number1');
-    
-    function changeCert(value){
-        let certificate = document.getElementById('certificate');
-        certificate.classList = ""; // clear classes on each function call
-        switch(value){
-            case 'A':
-                certificate.classList.add('number1');
-            break;
-            case 'B':
-                certificate.classList.add('number2');
-            break;
-            case 'C':
-                certificate.classList.add('number3');
-            break;
-            case 'D':
-                certificate.classList.add('number4');
+function uwu(xx) {
+    let uwu = xx.split(``);
+    const y = uwu.length;
+    for (i = 0; i < y; i++) {
+        let x = uwu[i];
+        if (x === `r`) {
+            uwu.push(`w`)
+        } else if (x === `l`) {
+            uwu.push(`w`)
+        } else if (x === `L`) {
+            uwu.push(`W`)
+        } else if (x === `R`) {
+            uwu.push(`W`)
+        } else {
+            uwu.push(x);
+        }
+        if (i === y) {
             break;
         }
     }
-});
-
-/* Additional things to be aware of */
-
-
-
-
-
-
-function processForm(form){
-
+    for (i = 0; i < uwu.length; i++) {
+        uwu.shift();
+        if (i === y) {
+            break;
+        }
+    }
+    return uwu.join(``);
 }
+
+
+console.log(uwu(`requlest`))

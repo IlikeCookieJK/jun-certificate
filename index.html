@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <script src="certificate.js"></script>
 </head>
+
 <body>
     <main>
         <section class="selection">
@@ -17,25 +19,33 @@
                     <option value="court">Federal Court Certificate</option>
                     <option value="challenger">Challenger Certificate</option>
                     <option value="noscam">Totally Legit Certificate</option>
+                    <option value="UwU">UwU Certificate</option>
                 </select>
                 <p>Input Name</p>
                 <input type="text" name="name" id="name" placeholder="Name">
                 <p>Input Reason(s) for Certificate</p>
                 <textarea name="reason" id="reason" placeholder="Reason" cols="90" rows="10"></textarea>
-                
-                <!-- <input type="submit" value="Generate" class="submit"> -->
+
             </form>
+            <!-- <a href="#" id="print">Print</a> -->
+            <button id="print" onclick="window.print()">Print</button>
 
         </section>
 
         <section class="cimg">
             <div id="certificate" class="certificate1">
-                <span id="nameOutput" class="cname">Name</span>
-                <span id="rOutput" class="crea">Reason(s)</span>
+                <div id="certImg" class="ci"><img src="certificates/Court.png" alt="Court Certificate" id="Cert1"
+                        class=""></img></div>
+
+                <div id="texts"> <span id="nameOutput" class="cname">You</span>
+                    <span id="rOutput" class="crea">For being a bad boy.</span>
+                </div>
                 <span id="dOutput" class="cdate">Date</span>
             </div>
+
 
         </section>
     </main>
 </body>
+
 </html>
