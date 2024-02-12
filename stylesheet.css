@@ -163,9 +163,9 @@ textarea {
 }
 
 .certificate4 .cname {
-    font-size: 2vw;
+    font-size: 4vw;
     flex-basis: 100%;
-    transform: translate(15.5vw, -44.2vh);
+    transform: translate(15.5vw, -48.2vh);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,14 +177,14 @@ textarea {
     width: 35vw;
     height: 10vh;
     position: relative;
-    transform: translate(7.4vw, -44vh);
+    transform: translate(7.4vw, -46vh);
 }
 
 .certificate4 .cdate {
-    font-size: 1.6vw;
+    font-size: 2vw;
     width: 10vw;
     position: relative;
-    transform: translate(20vw, -32vh);
+    transform: translate(20vw, -31vh);
 }
 
 .invs {
@@ -272,18 +272,18 @@ textarea {
     }
 
     .certificate4 .cname {
-        font-size: 4.5vw;
-        transform: translate(40vw, -54.5vh);
+        font-size: 6.5vw;
+        transform: translate(40vw, -59.5vh);
     }
 
     .certificate4 .crea {
         font-size: 3.2vw;
         width: 50rem;
-        transform: translate(12vw, -53vh);
+        transform: translate(12vw, -56vh);
     }
 
     .certificate4 .cdate {
-        font-size: 3vw;
+        font-size: 4vw;
         transform: translate(45.5vw, -36vh);
     }
 }
