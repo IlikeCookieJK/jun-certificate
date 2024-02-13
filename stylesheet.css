@@ -165,9 +165,10 @@ textarea {
 }
 
 .certificate4 .cname {
-    font-size: 4vw;
+    font-size: 3.5vw;
+    width: 35vw;
     flex-basis: 100%;
-    transform: translate(15.5vw, -48.5vh);
+    transform: translate(7.4vw, -48.5vh);
     display: flex;
     justify-content: center;
     align-items: center;
